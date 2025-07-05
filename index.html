@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Balaram-Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="Images/bg.jpg">
+    <script src="https://kit.fontawesome.com/e0534155e7.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<!----------------------- nav/highlights -------------------->
+    <div id="myhead">
+        <div class="container">
+            <nav>
+                <h1 class="dear"><strong class="D">D</strong>ear/Rudra</h1>
+                <ul id="sidemenu">
+                    <li><a href="#myhead">Home</a></li>
+                    <li><a href="#about" onclick="closemenu()">About</a></li>
+                    <li><a href="#portfolio" onclick="closemenu()">Portfolio</a></li>
+                    <li><a href="#contact" onclick="closemenu()">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="myheader-text">
+                <h3>Hello, It's Me</h3>
+                <h1>Balaram Gochhayat</h1>
+                <h3>And I want to be a <span class="multiple-text"></span></h3></h3>
+                <p>I have completed bachelor's degree and currently I'm pursuing Master's degree.<br>I'm a Teamwork, Collaborative and Adaptability person !</p>
+
+                <a href="https://www.linkedin.com/in/balaram2002" title="linkedin" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://github.com/balaram2002" title="gitHub" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="https://x.com/Balaram34165445"  title="twitter" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="https://www.instagram.com/prince_rudra_7978" title="instagram" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+            <a href="Images/BalaramGochhayatResume (1)_copy.pdf" download class="btn">Download Resume</a>
+        </div>
+    </div>
+<!-- ------------------------- about -------------------------->
+
+        <div class="row" id="about">
+            <div class="about-col1">
+                <img src="images/formal.png">
+            </div>
+            <div class="about-col2">
+                <h1 class="sub-title"><b class="Am">A</b>bout <b class="Am">M</b>e</h1>
+                <p> I want to be a passionate and dedicated Junior Software Developer 
+                with a strong technical foundation and a desire to contribute to the field of software development.
+                With a solid background in Java programming and proficiency in HTML, CSS, JavaScript, Bootstrap,
+                and MySQL, I am equipped with the skills to create efficient and robust software solutions.
+                I am eager to continuously enhance my skills, keep up with emerging technologies, and collaborate with experienced developers to solve real-world problems.
+                My hands-on experience with projects like the Bank Management System and Request Management System has strengthened my problem-solving abilities, teamwork, and understanding of software development processes.</p>
+
+
+                <div class="tab-title">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Front-End Development</span><br>Creating UI/UX Websites</li>
+                        <li><span>UI/UX Designer</span><br>Designing Atractive Interface</li>
+                        <li><span>Java Development</span><br>Software Development</li>
+                        <li><span>MySQL</span><br>Building Relational DataBase</li>
+                        <li><span>Pursuing JAVA FullStack Development</span><br>Enterprise Applications Development</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                            <li><span>Master Of Computer Applications (MCA)</span><br>Sep 2023 - Present<br>Gandhi Institute For Technology (Gift), Bhubaneswar |75%</li>
+                            <li><span>Bachelor Of Science (Bsc)</span><br>Jul 2019 - May 2022<br>Om Shanti College, Baro, Kendrapara, Odisha |81%</li>
+                            <li><span>+2 Science (CHSE)</span><br>Jun 2017 - Jun 2019<br>Ramadevi Higher Secondary School, Kendrapara, Odisha |56%</li>
+                            <li><span>Matriculation</span><br>Mar 2016 - Apr 2017<br>Bajra Mahakali High School, Kochila, Kendrapara, Odisha |61%</li>
+                            <!-- <li><span>PGDCA</span><br>Aug 2019 - Jan 2020<br>CIMIT, Jajpur, Odisha |81%</li> -->
+                    </ul>
+                </div> 
+                <div class="tab-contents" id="experience">
+                    <ul>
+                            <li><span>Java Development</span><br>Jun 2023 - Aug 2023<br>Ocac Training Center Bhubaneswar, Odisha, India <i>(Hybrid)</i><br><br>- During my two-month internship at the OCAC Training Center in Bhubaneswar, I developed and implemented a Request Management System using Java and NetBeans IDE 8.2.<br>- This project sharpened my skills in Java programming, problem-solving, and software development, providing a solid foundation for future projects.</li>
+                            <li><br><span>SAP ABAP </span><br>March 2024 - April 2024<br>RAISTAR IT CONSULTING AND SERVICES, Bhubaneswar, India <i>(Hybrid)</i><br><br>- During my SAP ABAP internship, I developed custom reports, interfaces, and enhancements using ABAP.<br>- I worked with Data Dictionary objects, SmartForms, and SAPScripts, and collaborated with functional teams.<br>- I also optimized program performance and performed debugging and unit testing to ensure quality.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+<!-- --------------------- Portfolio/projects --------------  -->
+<section class="portfolio" id="portfolio">
+    <h1 class="sub-title"><b class="Am">L</b>atest <b class="Am">P</b>roject</h1>
+
+        <div class="portfolio-container">
+            <div class="portfolio-box lbox1">
+                <img src="Images/c5.jpg"> 
+                <div class="portfolio-layer">
+                    <h4>Personal calorie calculator</h4>
+                    <p>The Personal Calorie Calculator helps users track daily calorie intake and manage their diet effectively.</p>
+                    <a href="https://github.com/balaram2002" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="portfolio-box mbox2">
+                <img src="Images/R1.png">
+                <div class="portfolio-layer">
+                    <h4>Request Management System</h4>
+                    <p>The Request Management System, built with Java and MySQL, allows user authentication, request submission, tracking, and efficient management.</p>
+                    <a href="https://github.com/balaram2002" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="portfolio-box rbox3">
+                <img src="Images/quiz.jpg">
+                <div class="portfolio-layer">
+                    <h4>Online Quiz Application</h4>
+                    <p>The online quiz application allows users to create, take, and evaluate quizzes with real-time results.</p>
+                    <a href="https://github.com/balaram2002" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="portfolio-box lbox4">
+                <img src="Images/Bank.jpg">
+                <div class="portfolio-layer">
+                    <h4>Bank Management System</h4>
+                    <p>The project includes functionalities such as opening a bank account, depositing, withdrawing, generating mini-statements, and changing PIN efficiently.</p>
+                    <a href="https://github.com/balaram2002" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="portfolio-box mbox5">
+                <img src="Images/t1.jpg">
+                <div class="portfolio-layer">
+                    <h4>TIC-TAC-TOE</h4>
+                    <p>A Tic Tac Toe game features a 3x3 grid where players take turns marking X or O.</p>
+                    <a href="https://github.com/balaram2002" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="portfolio-box rbox6">
+                <img src="Images/future.jpg">
+                <div class="portfolio-layer">
+                    <h4>Future Number Prediction</h4>
+                    <p>The future number prediction game challenges players to guess numbers based on provided sequences and patterns.</p>
+                    <a href="https://github.com/balaram2002" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+</section>
+
+<!-- --------------------- Portfolio/certificates ----------- -->
+    <div class="heading">
+        <h1 class="sub-title"><b class="Am">M</b>y <b class="Am">&nbsp;C</b>ertification</h1>
+    </div>
+    <div class="certificate-gallery">   
+            <div class="certificate-box">
+                <div class="certificat-img">
+                <img src="Images/p6.jpg" alt="java development certificate">
+                </div>
+                <div class="certificate-content">
+                <h3>Java Development</h3>
+                <p>Coded and implemented new features in JAVA and OOPs concept, Ensuring the delivery of high-quality, error-free code.</p>
+                </div>
+            </div>
+            <div class="certificate-box">
+                <div class="certificat-img">
+                <img src="Images/p5.jpg" alt="web development certificate">
+                </div>
+                <div class="certificate-content">
+                <h3> Merit Certificate</h3>
+                <p>I secured 1st position in the Summer Internship Program (SIP) 2024 and received a Merit Certificate from my college.</p>
+                </div>
+            </div>
+            <div class="certificate-box">
+                <div class="certificat-img">
+                <img src="Images/p4.jpg" alt="Full-Stack web development certificate">
+                </div>
+                <div class="certificate-content">
+                <h3>JDBC IN JAVA </h3>
+                <p>This course has deepened my understanding of Java Database Connectivity, and I'm eager to apply these new skills in real-world projects.</p>
+                </div>
+            </div>
+            <div class="certificate-box">
+                <div class="certificat-img">
+                <img src="Images/p3.jpg" alt="SQL certificate">
+                </div>
+                <div class="certificate-content">
+                <h3>SQL/Relational Database</h3>
+                <p>Earn a comprehensive SQL certificate from HackerRank.<br>Gain mastery in Structured Query Language, a fundamental skill for database management. Enhance my career prospects with  recognized certification.</p>
+                </div>
+            </div>
+            <div class="certificate-box">
+                <div class="certificat-img">
+                <img src="Images/p7.jpg" alt="responsive-web-design certificate">
+                </div>
+                <div class="certificate-content">
+                <h3>Core-Java</h3>
+                <p> I’ve earned my Java certification from ocac training center.<br>This achievement has strengthened my programming expertise and fueled my passion for problem-solving through efficient coding.</p>
+                </div>
+            </div>
+            <div class="certificate-box">
+                <div class="certificat-img">
+                <img src="Images/p2.jpg" alt="Azure certificate">
+                </div>
+                <div class="certificate-content">
+                <h3>SAP ABAP</h3>
+                <p>I’ve earned my SAP_ABAP certification from RAISTAR IT CONSULTING AND SERVICES.<br>SAP ABAP is used to develop applications within the SAP environment for business processes.</p>
+                </div>
+            </div>
+            <div class="certificate-box">
+                <div class="certificat-img">
+                <img src="Images/Screenshot (7).png" alt="CSS certificate">
+                </div>
+                <div class="certificate-content">
+                <h3>Cloud Computing</h3>
+                <p>Earn a comprehensive cloud computing certificate from Nptel.</p>
+                </div>
+            </div>
+            <div class="certificate-box">
+                <div class="certificat-img">
+                <img src="Images/p1.jpg" alt="Core Java certificate">
+                </div>
+                <div class="certificate-content">
+                <h3>PGDCA</h3>
+                <p>I achieved my PGDCA certificate from kensoft education and learning essential skills like HTML, CSS, and C language during the course.</p>
+                </div>
+            </div>
+    </div>
+
+<!-- --------------------- Portfolio/Hobbies --------------- -->
+<section class="hobbies" id="hobbies">
+    <h1 class="sub-title"><b class="Am">M</b>y <b class="Am">H</b>obbies</h1>
+
+        <div class="hobbies-container">
+            <div class="hobbies-box">
+                <i class="fa-solid fas fa-music"></i>
+                <h3>LISTENING TO MUSIC</h3>
+                <p>"Music is one of the most popular leisure activities. <br>When i listen to music, my brains release dopamine, which makes me happy"</p>
+            </div>
+            <div class="hobbies-box">
+                <i class="fa-solid fa-code"></i>
+                <h3>CODING</h3>
+                <p>"Passionate about coding: turning ideas into elegant solutions.<br>Endlessly learning, problem-solving, and enjoying the beauty of creating with code"</p>
+            </div>
+            <div class="hobbies-box">
+                <i class="fa-solid fa-bacon"></i>
+                <h3>COOKING</h3>
+                <p>"When I'm not working or studying, I really enjoy cooking. <br>I finds joy in experimenting with flavors, trying new recipes, and creating culinary delights."</p>
+            </div>
+        </div>
+</section>
+
+<!-- ------------------------- contacts -------------------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>balaramgochhayat2002@gmail.com</p>
+                <p><i class="fa-solid fa-square-phone"></i>(+91) 7978778986</p>
+                <div class="social-icons">
+                <a href="https://www.linkedin.com/in/balaram2002" title="linkedin" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://github.com/balaram2002" title="gitHub" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="https://x.com/Balaram34165445"  title="twitter" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="https://www.instagram.com/prince_rudra_7978" title="instagram" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+                <a href="Images/BalaramGochhayatResume (1)_copy.pdf" download class="btn">Download Resume</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet" class="input-right-animation">
+                    <input type="text" name="Name" placeholder=" name : title " required>
+                    <input type="email" name="Email" placeholder="name@gmail.com" required>
+                    <textarea name="Message" rows="5" placeholder="any message for me!"></textarea>
+                    <button class="btn">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-icon">
+        <a href="#myhead"><i class="fa-solid fa-arrow-up"></i></a>
+    </div>
+<footer>
+    <div class="copyright">
+        <p>Copyright &copy; 2024 by  Balaram. <i class="fa-solid fa-shield-heart"></i></p>
+    </div>
+    <audio src="Images/just_relax.mp3" type="audio/mpeg" controls autoplay loop></audio>
+</footer>
+
+    <!-- -------------- scroll reveal --------- -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- -------------------- typed js -------- -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+    <!-- ----------------- custom js ---------- -->
+    <script src="./index.js"></script>
+</body>
+</html>
